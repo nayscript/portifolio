@@ -1,3 +1,12 @@
+:root{
+    --preto: #000;
+    --azul: #0650C2;
+    --branco: #fff;
+    --cinza--escuro: #5C5C5C;
+    --roxo: #520AB3;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +15,7 @@
 }
 
 body{
-    background-color: #000;
+    background-color: var(--preto);
     height: 100vh;
 }
 
@@ -20,7 +29,7 @@ body{
 }
 
 h2.titulo{
-    color: #fff;
+    color: var(--branco);
     font-size: 38px;
     text-align: center;
 }
@@ -31,11 +40,11 @@ h2.animate__animated .animate__fadeInDown{
 }
 
 h2.titulo span{
-    color: #0650C2;
+    color: var(--azul);
 }
 
 button:hover{
-    box-shadow: 0px 0px 8px #0650C2;
+    box-shadow: 0px 0px 8px var(--azul);
     transform: scale(1.05);
 }
 
@@ -57,14 +66,14 @@ header > .interface{
 }
 
 header .menu-desktop__lista__item__link{
-    color: #5C5C5C;
+    color: var(--cinza--escuro);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header .menu-desktop__lista__item__link:hover{
-    color: #fff;
+    color: var(--branco);
     transform: scale(1.05);
 }
 
@@ -82,14 +91,14 @@ nav .menu-desktop__lista{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #0650C2;
+    background-color: var(--azul);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
 }
 
 .btn-contato__btn:hover{
-    box-shadow: 0px 0px 8px #0650C2;
+    box-shadow: 0px 0px 8px var(--azul);
 }
 
 /* topo */
@@ -105,7 +114,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-    color: #fff;
+    color: var(--branco);
     font-size: 42px;
     line-height: 40px;
 }
@@ -116,11 +125,14 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1 span{
-    color: #0650C2;
+    background: linear-gradient(90deg, var(--azul), var(--roxo));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .topo-do-site .txt-topo-site p{
-    color: #fff;
+    color: var(--branco);
     margin: 40px 0;
 }
 
@@ -155,7 +167,7 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box{
-    color: #fff;
+    color: var(--branco);
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -189,7 +201,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre{
-    color: #fff;
+    color: var(--branco);
 }
 
 .sobre .txt-sobre h2{
@@ -199,7 +211,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre h2 span{
-    color: #0650C2;
+    color: var(--azul);
     display: block;
 }
 
@@ -212,7 +224,7 @@ section.sobre .flex{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #0650C2;
+    background-color: var(--azul);
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -223,16 +235,102 @@ section.sobre .flex{
 /* portifólio */
 
 section.portifolio{
-    padding: 80px 4%;
-    box-shadow: 0px 0px 40px 10px #ffffff15;
+    padding: 90px 4%;
 }
 
-section.portifolio .flex{
-    justify-content: space-around;
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
 }
 
-.img-port{
-    width: 360px;
-    height: 460px;
-    background-color: #0650C2;
+.container .custom-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 340px;
+    max-width: 100%;
+    height: 300px;
+    background: var(--branco);
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .custom-card:hover {
+    height: 375px;
+}
+
+.container .custom-card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: var(--cinza--escuro);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.container .custom-card:hover .img-box{
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .custom-card .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .custom-card .custom-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.container .custom-card:hover .custom-content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .custom-card .custom-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--roxo);
+}
+
+.container .custom-card .custom-content p {
+    color: var(--preto);
+}
+
+.container .custom-card .custom-content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--roxo);
+    color: var(--branco);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.container .custom-card .custom-content a:hover{
+    opacity: .8;
 }
