@@ -2,7 +2,7 @@
     --preto: #000;
     --azul: #0650C2;
     --branco: #fff;
-    --cinza--escuro: #5C5C5C;
+    --cinza--escuro: #5c5c5cc0;
     --roxo: #520AB3;
 
 }
@@ -12,6 +12,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* color: #0650C2; */
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -48,11 +53,16 @@ button:hover{
     transform: scale(1.05);
 }
 
-/* header */
+ /* header */
 
 header{
-    padding: 40px 4%;
+    padding: 10px 4%;
+    position: fixed;
+    width: 100vw;
 
+    background-color: rgba(16, 16, 16, 0.5);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 }
 
 header > .interface{
@@ -65,11 +75,16 @@ header > .interface{
     border-radius: 50%;
 }
 
+.logo img:hover {
+    transform: scale(1.05);
+}
+
 header .menu-desktop__lista__item__link{
     color: var(--cinza--escuro);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
+    font-size: 1rem;
 }
 
 header .menu-desktop__lista__item__link:hover{
@@ -104,7 +119,7 @@ nav .menu-desktop__lista{
 /* topo */
 
 .topo-do-site{
-    padding: 40px 4%;
+    padding: 40px 7%;
 }
 
 section.topo-do-site .flex{
@@ -131,11 +146,6 @@ section.topo-do-site .flex{
     -webkit-text-fill-color: transparent;
 }
 
-.topo-do-site .txt-topo-site p{
-    color: var(--branco);
-    margin: 40px 0;
-}
-
 .img-topo-site .img-topo-site__img{
     height: 500px;
     width: 500px;
@@ -156,38 +166,12 @@ section.topo-do-site .flex{
     }
 }
 
-/* especialidades */
 
-section.especialidades{
-    padding: 40px 4%;
-}
-
-section.especialidades .flex{
-    gap: 60px;
-}
-
-.especialidades .especialidades-box{
-    color: var(--branco);
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-}
-
-.especialidades .especialidades-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #ffffff83;
-}
-
-.especialidades .especialidades-box h3{
-    font-size: 28px;
-    margin: 15px 0;
-}
- 
 /* sobre */
 
 section.sobre{
-    padding: 80px 8%;
+    padding: 90px 4%;
+    margin: 75px 0 75px 0;
 }
 
 section.sobre .flex{
@@ -232,11 +216,42 @@ section.sobre .flex{
     justify-content: center;
 }
 
+/* especialidades */
+
+section.especialidades{
+    padding: 90px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    border-radius: 31px;
+    background: linear-gradient(145deg, #0549af44, #0657d044);
+    transform: scale(1.05);
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+ 
+
 /* portifólio */
 
 section.portifolio{
     padding: 90px 4%;
 }
+
 
 .container {
     position: relative;
@@ -312,7 +327,7 @@ section.portifolio{
 .container .custom-card .custom-content h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--roxo);
+    color: var(--azul);
 }
 
 .container .custom-card .custom-content p {
@@ -325,7 +340,7 @@ section.portifolio{
     display: inline-block;
     padding: 12px 25px;
     text-decoration: none;
-    background: var(--roxo);
+    background: var(--azul);
     color: var(--branco);
     font-weight: 500;
     border-radius: 5px;
@@ -334,3 +349,42 @@ section.portifolio{
 .container .custom-card .custom-content a:hover{
     opacity: .8;
 }
+
+/* footer */
+
+.rodape {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 20px var(--cinza--escuro);
+}
+
+.rodape .logos {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.rodape .logos a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.logos .logo__alura {
+    width: 60%;
+}
+
+.rodape p {
+    color: var(--branco);
+    font-size: small;
+    text-align: center;
+    margin: 15px 0 0 15px;
+    margin: auto;
+}
+
+
+

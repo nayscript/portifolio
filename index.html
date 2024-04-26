@@ -16,29 +16,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="mediaq.css">
     <title>Portifólio</title>
 </head>
 <body>
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
+                <a href="#topo-do-site">
                     <img src="imagens/img__icon__nay.jpeg" alt="Logo foto Nayrlen">
                 </a>
             </div>
             <nav class="menu-desktop">
                 <ul class="menu-desktop__lista">
                     <li class="menu-desktop__lista__item">
-                        <a href="#" class="menu-desktop__lista__item__link">Início</a>
+                        <a href="#topo-do-site" class="menu-desktop__lista__item__link">Início</a>
                     </li>
                     <li class="menu-desktop__lista__item">
-                        <a href="#" class="menu-desktop__lista__item__link">Especialidades</a>
+                        <a href="#sobre" class="menu-desktop__lista__item__link">Sobre</a>
                     </li>
                     <li class="menu-desktop__lista__item">
-                        <a href="#" class="menu-desktop__lista__item__link">Sobre</a>
+                        <a href="#especialidades" class="menu-desktop__lista__item__link">Especialidades</a>
                     </li>
                     <li class="menu-desktop__lista__item">
-                        <a href="#" class="menu-desktop__lista__item__link">Projetos</a>
+                        <a href="#portifolio" class="menu-desktop__lista__item__link">Projetos</a>
                     </li>
                 </ul>
             </nav>
@@ -52,16 +54,13 @@
         </div>
     </header>
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="topo-do-site">
             <div class="interface-main">
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1 class="animate__animated animate__fadeInDown">
                             HELLO WORLD! EU SOU A <span>NAYRLEN ALVES;</span>
                         </h1>
-                        <p class="animate__animated animate__fadeIn">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi aspernatur a corrupti, eum doloribus dignissimos et voluptatibus nihil in pariatur neque assumenda eius rem, distinctio repellendus officia maiores! Atque?
-                        </p>
                     </div>
                     <div class="img-topo-site">
                         <img class="img-topo-site__img" src="imagens/img__icon__computador.png" alt="Imagem apresentacao Nayrlen">
@@ -70,42 +69,8 @@
             </div>
         </section>
 
-        <section class="especialidades">
-            <div class="interface">
-                <h2  class="titulo" class="animate__animated animate__fadeInLeft">MINHAS <span>PRINCIPAIS TECHS.</span></h2>
-                <div class="flex">
-                    <div class="especialidades-box">
-                        
-                        <i>
-                            <img src="imagens/icon__typescript__100.png" alt="Icone Typescript">
-                        </i>
-                        <h3>Typescript</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquam, quidem dicta tempore mollitia nulla blanditiis sint esse, quisquam vero non, dolores amet? Beatae maiores magnam, corrupti animi suscipit nihil.</p>
-
-                    </div>
-                    <div class="especialidades-box">
-                        
-                        <i>
-                            <img src="imagens/icons__angular__100.png" alt="Icone Angular">
-                        </i>
-                        <h3>Angular</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus exercitationem possimus esse laboriosam laudantium dolorum tenetur sint ullam, deserunt aliquam quae. Exercitationem, doloremque! Ipsam cumque iure quos fugiat, asperiores magnam.</p>
-
-                    </div>
-                    <div class="especialidades-box">
-                        
-                        <i>
-                            <img src="imagens/icon__java__100.png" alt="Logo Java">
-                        </i>
-                        <h3>Java</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis in aspernatur iusto odio recusandae numquam illum, voluptatem suscipit esse doloribus dolor sunt, alias, nobis id autem. Aperiam, suscipit fugiat!</p>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sobre">
+        
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -141,7 +106,43 @@
                 </div>
             </div>
         </section>
-        <section class="portifolio">
+
+        <section class="especialidades" id="especialidades">
+            <div class="interface">
+                <h2  class="titulo" class="animate__animated animate__fadeInLeft">MINHAS <span>PRINCIPAIS TECHS.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        
+                        <i>
+                            <img src="imagens/icon__typescript__100.png" alt="Icone Typescript">
+                        </i>
+                        <h3>Typescript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquam, quidem dicta tempore mollitia nulla blanditiis sint esse, quisquam vero non, dolores amet? Beatae maiores magnam, corrupti animi suscipit nihil.</p>
+
+                    </div>
+                    <div class="especialidades-box">
+                        
+                        <i>
+                            <img src="imagens/icons__angular__100.png" alt="Icone Angular">
+                        </i>
+                        <h3>Angular</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus exercitationem possimus esse laboriosam laudantium dolorum tenetur sint ullam, deserunt aliquam quae. Exercitationem, doloremque! Ipsam cumque iure quos fugiat, asperiores magnam.</p>
+
+                    </div>
+                    <div class="especialidades-box">
+                        
+                        <i>
+                            <img src="imagens/icon__java__100.png" alt="Logo Java">
+                        </i>
+                        <h3>Java</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis in aspernatur iusto odio recusandae numquam illum, voluptatem suscipit esse doloribus dolor sunt, alias, nobis id autem. Aperiam, suscipit fugiat!</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portifolio" id="portifolio">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
                 <div class="container">
@@ -180,11 +181,30 @@
                             </p>
                             <a href="#">Acesse aqui</a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
     </main>
+   
+    <footer class="rodape">
+        <ul class="logos">
+            <li>
+                <img src="imagens/logo111-removebg-preview.png" alt="Grupo mateus logo">
+            </li>
+            <li>
+                <img src="imagens/Capturar222-removebg-preview.png" alt="Governo do MA logo">
+            </li>
+            <li>
+                <img class="logo__alura" src="imagens/Logo Alura Include (1).svg" alt="Logo Alura Include">
+            </li>
+        </ul>
+        
+        <div class="flex">
+            <p>
+                &copy; Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
