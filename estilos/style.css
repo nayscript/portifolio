@@ -201,7 +201,7 @@ section.topo-do-site .flex{
 .topo-do-site h1{
     color: var(--branco);
     font-size: 3rem;
-    line-height: 40px;
+    line-height: 60px;
 }
 
 .txt-topo-site .animate__animated .animate__fadeInDown{
