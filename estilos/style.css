@@ -16,11 +16,13 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 body{
     background-color: var(--preto);
     height: 100vh;
+    width: 100vw;
 }
 
 .interface{
@@ -34,7 +36,7 @@ body{
 
 h2.titulo{
     color: var(--branco);
-    font-size: 38px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -117,6 +119,73 @@ nav .menu-desktop__lista{
     background-color: var(--branco);
 }
 
+/* menu mobile */
+
+.btn-abrir-menu i {
+    color: var(--azul);
+    font-size: 2.2rem;
+}
+
+.menu-mobile {
+    background-color: var(--azul);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+
+.menu-mobile.abrir-menu ~ .overlay--menu{
+    display: block;
+}
+
+
+.menu-mobile .btn-fechar {
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile .btn-fechar i {
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: var(--branco);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.overlay--menu {
+    background-color: #00000081;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
 /* topo */
 
 .topo-do-site{
@@ -131,7 +200,7 @@ section.topo-do-site .flex{
 
 .topo-do-site h1{
     color: var(--branco);
-    font-size: 42px;
+    font-size: 3rem;
     line-height: 40px;
 }
 
@@ -171,8 +240,8 @@ section.topo-do-site .flex{
 /* sobre */
 
 section.sobre{
-    padding: 375px 4% 50px 4%;
-    margin: 75px 0 75px 0; 
+    padding: 150px 4% 50px 4%;
+    margin: 75px 0 75px 0;
 }
 
 section.sobre .flex{
@@ -356,10 +425,9 @@ section.portifolio{
 
 .rodape {
     position: relative;
-    width: 100%;
+    width: 100vw;
     min-height: 100px;
     padding: 20px 50px;
-    box-shadow: 0px 0px 20px var(--cinza--escuro);
 }
 
 .rodape .logos {
@@ -380,8 +448,8 @@ section.portifolio{
     display: inline-block;
 }
 
-.logo2 li .logo__alura {
-    width: 50%;
+.rodape .logo__alura {
+    width: 55%;
 }
 
 .rodape p {

@@ -1,22 +1,3 @@
-@media (max-width: 480px) {
-    .container .custom-card {
-        width: 230px;
-        border-radius: 15px;
-    }
-
-    .container .custom-card .img-box {
-        width: 185px;
-        border-radius: 10px;
-    }
-
-    .container .custom-card .custom-content p {
-        font-size: .8rem;
-    }
-
-    .container .custom-card .custom-content a {
-        font-size: 0.9rem;
-    }
-}
 
 @media (max-width: 932px) {
 
@@ -33,6 +14,7 @@
 
     header {
         backdrop-filter: none;
+        width: 100vw;
     }
 
     .menu-desktop, .btn-contato {
@@ -44,29 +26,21 @@
 
     .topo-do-site{
         padding: 50px 5%;
-    }
-
-    .img-topo-site .img-topo-site__img {
-        display: none;
-    }
-
-    .flex .txt-topo-site {
-        display: none;
+        text-align: center;
     }
 
     
     /* sobre */
 
     section.sobre{
-        padding: 0;
-        margin: 0;
+        text-align: center;
     }
 
     
     /* especialidades */
 
     section.especialidades{
-        padding: 50px 5%;
+        padding: 0px 5%;
     }
 
     
@@ -76,9 +50,52 @@
         padding: 50px 5%;
     }
 
+} 
+
+
+@media (max-width: 480px) {
+
+    /* topo */
+
+    .img-topo-site__img {
+        display: none;
+    }
+
+    .txt-topo-site {
+        display: none;
+    }
+    
+    /* sobre */
+    section.sobre{
+        text-align: center;
+        margin: -5px;
+    }
+
+    .container .custom-card {
+        border-radius: 15px;
+    }
+
+    .container .custom-card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container .custom-card .custom-content p {
+        font-size: .8rem;
+    }
+
+    .container .custom-card .custom-content a {
+        font-size: 0.9rem;
+    }
+
+    .rodape {
+        width: 100;
+    }
+
+    
     /* rodape */
 
     .rodape .logos {
         flex-direction: column;
     }
-} 
+}
