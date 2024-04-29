@@ -1,0 +1,84 @@
+@media (max-width: 480px) {
+    .container .custom-card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container .custom-card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container .custom-card .custom-content p {
+        font-size: .8rem;
+    }
+
+    .container .custom-card .custom-content a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 932px) {
+
+    /* geral */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* header */
+
+    header {
+        backdrop-filter: none;
+    }
+
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    
+    /* topo */
+
+    .topo-do-site{
+        padding: 50px 5%;
+    }
+
+    .img-topo-site .img-topo-site__img {
+        display: none;
+    }
+
+    .flex .txt-topo-site {
+        display: none;
+    }
+
+    
+    /* sobre */
+
+    section.sobre{
+        padding: 0;
+        margin: 0;
+    }
+
+    
+    /* especialidades */
+
+    section.especialidades{
+        padding: 50px 5%;
+    }
+
+    
+    /* portifólio */
+
+    section.portifolio{
+        padding: 50px 5%;
+    }
+
+    /* rodape */
+
+    .rodape .logos {
+        flex-direction: column;
+    }
+} 
