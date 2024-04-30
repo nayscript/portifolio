@@ -126,6 +126,10 @@ nav .menu-desktop__lista{
     font-size: 2.2rem;
 }
 
+.btn-abrir-menu {
+    display: none;
+}
+
 .menu-mobile {
     background-color: var(--azul);
     height: 100vh;
@@ -195,7 +199,6 @@ nav .menu-desktop__lista{
 section.topo-do-site .flex{
     align-items: center;
     justify-content: center;
-    gap: 90px;
 }
 
 .topo-do-site h1{
@@ -247,7 +250,6 @@ section.sobre{
 section.sobre .flex{
     align-items: center;
     justify-content: center;
-    gap: 60px;
 }
 
 .img-sobre img{

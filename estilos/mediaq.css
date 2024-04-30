@@ -14,7 +14,7 @@
 
     header {
         backdrop-filter: none;
-        width: 100vw;
+        width: 100%;
     }
 
     .menu-desktop, .btn-contato {
@@ -22,10 +22,15 @@
     }
 
     
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    
     /* topo */
 
     .topo-do-site{
-        padding: 50px 5%;
+        padding: 125px 5%;
         text-align: center;
     }
 
@@ -33,27 +38,31 @@
     /* sobre */
 
     section.sobre{
+        padding: 125px 25%;
         text-align: center;
     }
 
-    
-    /* especialidades */
-
-    section.especialidades{
-        padding: 0px 5%;
+    .sobre .txt-sobre p {
+        margin: 20px 75px;
     }
-
     
     /* portifólio */
 
     section.portifolio{
-        padding: 50px 5%;
+        padding: 100px 5%;
     }
 
 } 
 
 
 @media (max-width: 480px) {
+
+    /* header */
+
+    
+    .btn-abrir-menu i {
+        display: block;
+    }
 
     /* topo */
 
@@ -64,7 +73,8 @@
     .txt-topo-site {
         display: none;
     }
-      
+    
+  
     /* sobre */
     section.sobre{
         text-align: center;
@@ -92,7 +102,6 @@
         width: 100;
     }
 
-    
     /* rodape */
 
     .rodape .logos {
