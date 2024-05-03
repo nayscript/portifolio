@@ -71,6 +71,7 @@ header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 .logo img{
@@ -136,7 +137,7 @@ nav .menu-desktop__lista{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 9999999999999999;
     width: 0%;
     overflow: hidden;
     transition: .2s;
@@ -186,7 +187,7 @@ nav .menu-desktop__lista{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 88888;
+    z-index: 8888;
     display: none;
 }
 
@@ -273,7 +274,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre p{
-    margin: 20px 0;
+    margin: 20px 10px;
 }
 
 .txt-sobre .btn-social button{
@@ -460,6 +461,10 @@ section.portifolio{
     text-align: center;
     margin: 15px 0 0 15px;
     margin: auto;
+}
+
+.rodape .rodape__link {
+    color: var(--azul);
 }
 
 

@@ -1,15 +1,6 @@
 
 @media (max-width: 932px) {
 
-    /* geral */
-    .flex {
-        flex-direction: column;
-    }
-
-    .topo-do-site .flex {
-        flex-direction: column-reverse;
-    }
-
     /* header */
 
     header {
@@ -28,18 +19,19 @@
 
     
     /* topo */
-
-    .topo-do-site{
-        padding: 125px 5%;
-        text-align: center;
+    
+    .img-topo-site__img {
+        display: none;
     }
 
+    .txt-topo-site {
+        display: none;
+    }
     
     /* sobre */
 
     section.sobre{
-        padding: 125px 25%;
-        text-align: center;
+        padding: 100px 10px;
     }
 
     .sobre .txt-sobre p {
