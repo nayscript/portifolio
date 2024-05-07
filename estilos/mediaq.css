@@ -1,6 +1,10 @@
 
 @media (max-width: 932px) {
 
+    .flex{
+        flex-direction: column;
+    }
+
     /* header */
 
     header {
@@ -20,15 +24,45 @@
     
     /* topo */
     
+    section.topo-do-site{
+        padding: 150px 5%;
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.topo-do-site .txt-topo-site {
+        text-align: center;
+    }
     
     /* sobre */
 
     section.sobre{
-        padding: 100px 10px;
+        padding: 200px 10px;
+    }
+
+    .sobre .img-sobre {
+        padding-bottom: 25px;
+    }
+
+    .sobre .txt-sobre h2, .sobre .txt-sobre .btn-social {
+        text-align: center;
     }
 
     .sobre .txt-sobre p {
         margin: 20px 75px;
+        text-align: justify;
+    }
+
+    /* especialidades */
+
+    section.especialidades {
+        padding: 150px 6% 60px 6%;
+    }
+
+    section.especialidades .flex {
+        gap: 30px;
     }
     
     /* portifólio */
@@ -50,14 +84,48 @@
     }
 
     /* topo */
+    
+    .topo-do-site h1{
+        font-size: 2rem;
+    }
 
- 
+    section.topo-do-site .img-topo-site img{
+        width: 400px;
+        height: 400px;
+    }
+        
   
     /* sobre */
     section.sobre{
         text-align: center;
         margin: -5px;
     }
+
+    section.sobre .img-sobre img {
+        height: 15rem;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 2rem;
+    }
+    
+    .sobre .txt-sobre p{
+        margin: 12px 5px;
+    }
+
+    /* especialidades */
+    
+    section.especialidades h2{
+        font-size: 2rem;
+    }
+
+    
+    section.especialidades .flex {
+        gap: 10px;
+    }
+    
+
+    /* portifolio */
 
     .container .custom-card {
         border-radius: 15px;
